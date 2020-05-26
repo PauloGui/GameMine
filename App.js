@@ -10,6 +10,8 @@ export default function App() {
       <Text>Tamanho da grade:
           {params.getRowsAmount()}x{params.getCollumnsAmount()}  </Text>
       <Field />
+      <Field opened />
+      <Field opened nearMines={6} />
     </View>
   );
 }
