@@ -12,9 +12,12 @@ export default function App() {
       <Field />
       <Field opened />
       <Field opened nearMines={6} />
+      <Field opened nearMines={2} />
       <Field mined />
       <Field mined opened />
       <Field mined opened exploded />
+      <Field flagged />
+      <Field flagged opened />
     </View>
   );
 }
