@@ -1,10 +1,15 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {Component} from 'react';
+import { Platform, StyleSheet, Text, View} from 'react-native';
+import params from './src/params'
+import Field from './src/components/Field'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Iniciando o Mines</Text>
+      <Text>Tamanho da grade:
+          {params.getRowsAmount()}x{params.getCollumnsAmount()}  </Text>
+      <Field />
     </View>
   );
 }
