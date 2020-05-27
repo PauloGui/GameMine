@@ -4,9 +4,9 @@ const params = {
     blockSize: 30,
     borderSize: 5,
     fontSize: 15,
-    headerRatio: 0.15, // Proporção do painel superior da tela
+    headerRatio: 0.15, // Proporção do painel superior na tela
     difficultLevel: 0.1,
-    getCollumnsAmount() {
+    getColumnsAmount() {
         const width = Dimensions.get('window').width
         return Math.floor(width / this.blockSize)
     },
